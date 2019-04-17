@@ -46,7 +46,7 @@ class CSSelectionState extends State<CSSelection> {
 
   Widget createItem(BuildContext context, String name, int index) {
     return CSWidget(new CupertinoButton(
-        padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 16.0),
+        padding: EdgeInsets.zero,
         onPressed: () {
           if (index != currentSelection) {
             setState(() => currentSelection = index);
@@ -55,14 +55,13 @@ class CSSelectionState extends State<CSSelection> {
         },
         pressedOpacity: 1.0,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Expanded(
                 child: Text(
               name,
               style: TextStyle(
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : CS_TEXT_COLOR,
+                color: CS_TEXT_COLOR,
                 fontSize: widget.fontSize,
               ),
             )),
