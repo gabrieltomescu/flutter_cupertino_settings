@@ -39,9 +39,6 @@ class CupertinoSettings extends StatelessWidget {
   Widget build(BuildContext context) {
     if (!shrinkWrap) {
       return Container(
-        color: Theme.of(context).brightness == Brightness.dark
-            ? Colors.black12
-            : CupertinoColors.lightBackgroundGray,
         child: SafeArea(
           bottom: false,
           child: Column(
