@@ -14,7 +14,7 @@ class CSHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 10.0, top: 30.0, bottom: 5.0),
+      padding: const EdgeInsets.only(left: 16.0, top: 30.0, bottom: 5.0),
       child: Text(title.toUpperCase(),
           style: TextStyle(
               color: Theme.of(context).brightness == Brightness.dark
@@ -22,9 +22,6 @@ class CSHeader extends StatelessWidget {
                   : CS_HEADER_TEXT_COLOR,
               fontSize: CS_HEADER_FONT_SIZE)),
       decoration: BoxDecoration(
-          color: Theme.of(context).brightness == Brightness.dark
-              ? backgroundColorDark
-              : CS_HEADER_COLOR,
           border:
               Border(bottom: BorderSide(color: CS_BORDER_COLOR, width: 1.0))),
     );

@@ -18,7 +18,7 @@ class CSSelection extends StatefulWidget {
   final double fontSize;
 
   CSSelection(this.items, this.onSelected,
-      {this.currentSelection = 0, this.fontSize = CS_HEADER_FONT_SIZE});
+      {this.currentSelection = 0, this.fontSize = CS_ITEM_NAME_SIZE});
 
   @override
   State<StatefulWidget> createState() {
@@ -46,6 +46,7 @@ class CSSelectionState extends State<CSSelection> {
 
   Widget createItem(BuildContext context, String name, int index) {
     return CSWidget(new CupertinoButton(
+        padding: EdgeInsets.zero,
         onPressed: () {
           if (index != currentSelection) {
             setState(() => currentSelection = index);
@@ -54,14 +55,13 @@ class CSSelectionState extends State<CSSelection> {
         },
         pressedOpacity: 1.0,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Expanded(
                 child: Text(
               name,
               style: TextStyle(
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : CS_TEXT_COLOR,
+                color: CS_TEXT_COLOR,
                 fontSize: widget.fontSize,
               ),
             )),

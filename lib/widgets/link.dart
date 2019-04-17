@@ -8,7 +8,7 @@ class CSLink extends CSWidget {
 
   CSLink(this.text, this.pressed,
       {CSWidgetStyle style = CS_DEFAULT_STYLE,
-      this.fontSize = CS_HEADER_FONT_SIZE})
+      this.fontSize = CS_ITEM_NAME_SIZE})
       : super(
             CupertinoButton(
                 padding: EdgeInsets.zero,
