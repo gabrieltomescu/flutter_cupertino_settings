@@ -18,7 +18,7 @@ class CSSelection extends StatefulWidget {
   final double fontSize;
 
   CSSelection(this.items, this.onSelected,
-      {this.currentSelection = 0, this.fontSize = CS_HEADER_FONT_SIZE});
+      {this.currentSelection = 0, this.fontSize = CS_ITEM_NAME_SIZE});
 
   @override
   State<StatefulWidget> createState() {

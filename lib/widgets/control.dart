@@ -12,7 +12,7 @@ class CSControl extends CSWidget {
     this.name,
     this.contentWidget, {
     CSWidgetStyle style = CS_DEFAULT_STYLE,
-    this.fontSize = CS_HEADER_FONT_SIZE,
+    this.fontSize = CS_ITEM_NAME_SIZE,
   }) : super(
             _ControlWidget(
               fontSize: fontSize,
