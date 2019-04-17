@@ -46,6 +46,7 @@ class CSSelectionState extends State<CSSelection> {
 
   Widget createItem(BuildContext context, String name, int index) {
     return CSWidget(new CupertinoButton(
+        padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 16.0),
         onPressed: () {
           if (index != currentSelection) {
             setState(() => currentSelection = index);
