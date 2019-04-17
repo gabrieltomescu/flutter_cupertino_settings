@@ -20,7 +20,7 @@ const double CS_HEADER_FONT_SIZE = 14.0;
 const double CS_ITEM_NAME_SIZE = 16.0;
 const EdgeInsets CS_ICON_PADDING = EdgeInsets.only(right: 10.0);
 const CSWidgetStyle CS_DEFAULT_STYLE = CSWidgetStyle();
-const Color CS_CHECK_COLOR = Color.fromARGB(255, 102, 114, 228);;
+const Color CS_CHECK_COLOR = Color.fromARGB(255, 102, 114, 228);
 const double CS_CHECK_SIZE = 24.0;
 
 /// Event for [CSSelection]
