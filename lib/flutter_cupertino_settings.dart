@@ -13,7 +13,7 @@ part 'widgets/widget.dart';
 const double CS_ITEM_HEIGHT = 50.0;
 const Color CS_HEADER_COLOR = Color.fromARGB(255, 247, 247, 247);
 const Color CS_BORDER_COLOR = Colors.black12;
-const Color CS_TEXT_COLOR = Colors.black;
+const Color CS_TEXT_COLOR = Color.fromARGB(255, 102, 114, 228); //Purple
 const Color CS_HEADER_TEXT_COLOR = Colors.black54;
 const EdgeInsets CS_ITEM_PADDING = EdgeInsets.symmetric(horizontal: 16.0);
 const double CS_HEADER_FONT_SIZE = 14.0;
