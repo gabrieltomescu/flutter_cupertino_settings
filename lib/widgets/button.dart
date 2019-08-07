@@ -55,9 +55,9 @@ class CSButtonType {
   static const CSButtonType DESTRUCTIVE =
       CSButtonType(Colors.red, AlignmentDirectional.center);
   static const CSButtonType DEFAULT =
-      CSButtonType(Colors.blue, AlignmentDirectional.centerStart);
+      CSButtonType(CS_TEXT_COLOR, AlignmentDirectional.centerStart);
   static const CSButtonType DEFAULT_CENTER =
-      CSButtonType(Colors.blue, AlignmentDirectional.center);
+      CSButtonType(CS_TEXT_COLOR, AlignmentDirectional.center);
 
   final Color color;
   final AlignmentGeometry alignment;
