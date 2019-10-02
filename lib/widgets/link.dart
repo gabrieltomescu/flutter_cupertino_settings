@@ -15,11 +15,14 @@ class CSLink extends CSWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(text,
-                        style: TextStyle(
-                          color: CS_TEXT_COLOR,
-                          fontSize: fontSize,
-                        )),
+                    Text(
+                      text,
+                      style: TextStyle(
+                        color: CS_TEXT_COLOR,
+                        fontSize: fontSize,
+                        letterSpacing: 0.0,
+                      ),
+                    ),
                     const Icon(Icons.keyboard_arrow_right,
                         color: Colors.black26)
                   ],

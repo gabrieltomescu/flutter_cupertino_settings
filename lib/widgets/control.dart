@@ -39,13 +39,16 @@ class _ControlWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Text(name,
-            style: TextStyle(
-              color: Theme.of(context).brightness == Brightness.dark
-                  ? null
-                  : CS_TEXT_COLOR,
-              fontSize: fontSize,
-            )),
+        Text(
+          name,
+          style: TextStyle(
+            color: Theme.of(context).brightness == Brightness.dark
+                ? null
+                : CS_TEXT_COLOR,
+            fontSize: fontSize,
+            letterSpacing: 0.0,
+          ),
+        ),
         contentWidget
       ],
     );

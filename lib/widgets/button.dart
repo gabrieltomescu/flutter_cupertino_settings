@@ -37,9 +37,14 @@ class CSButton extends CSWidget {
                     padding: EdgeInsets.zero,
                     child: Container(
                       alignment: type.alignment,
-                      child: Text(text,
-                          style:
-                              TextStyle(color: type.color, fontSize: fontSize)),
+                      child: Text(
+                        text,
+                        style: TextStyle(
+                          color: type.color,
+                          fontSize: fontSize,
+                          letterSpacing: 0.0,
+                        ),
+                      ),
                     ),
                     onPressed: pressed,
                   ),

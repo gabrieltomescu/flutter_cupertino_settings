@@ -15,15 +15,24 @@ class CSHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 16.0, top: 30.0, bottom: 5.0),
-      child: Text(title.toUpperCase(),
-          style: TextStyle(
-              color: Theme.of(context).brightness == Brightness.dark
-                  ? null
-                  : CS_HEADER_TEXT_COLOR,
-              fontSize: CS_HEADER_FONT_SIZE)),
+      child: Text(
+        title.toUpperCase(),
+        style: TextStyle(
+          color: Theme.of(context).brightness == Brightness.dark
+              ? null
+              : CS_HEADER_TEXT_COLOR,
+          fontSize: CS_HEADER_FONT_SIZE,
+          letterSpacing: 0.0,
+        ),
+      ),
       decoration: BoxDecoration(
-          border:
-              Border(bottom: BorderSide(color: CS_BORDER_COLOR, width: 1.0))),
+        border: Border(
+          bottom: BorderSide(
+            color: CS_BORDER_COLOR,
+            width: 1.0,
+          ),
+        ),
+      ),
     );
   }
 }

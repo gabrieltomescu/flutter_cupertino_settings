@@ -58,13 +58,15 @@ class CSSelectionState extends State<CSSelection> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Expanded(
-                child: Text(
-              name,
-              style: TextStyle(
-                color: CS_TEXT_COLOR,
-                fontSize: widget.fontSize,
+              child: Text(
+                name,
+                style: TextStyle(
+                  color: CS_TEXT_COLOR,
+                  fontSize: widget.fontSize,
+                  letterSpacing: 0.0,
+                ),
               ),
-            )),
+            ),
             Icon(Icons.check,
                 color: (index == currentSelection
                     ? Theme.of(context).brightness == Brightness.dark
